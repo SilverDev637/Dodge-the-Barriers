@@ -8,7 +8,8 @@ Open this page at [https://litucrack.github.io/dodge_the_barriers_v6.3/](https:/
 To play on your device, follow the instructions:
 
  * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers_v6.3/raw/master/Dodge_the_Barriers.zip)
- * Open the downloaded file
+ * Extract the .zip file
+ * Open the game
  * Have fun and Enjoy! 😄
 <br/>
 <br/>
@@ -18,8 +19,9 @@ To play on your device, follow the instructions:
 To play on your Micro:bit, follow the instructions:
 
  * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/raw/master/Dodge-the-Barriers-v6.3.zip)
- * Connect your micro:bit to your computer using a USB wire.
- * Move the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/raw/master/Dodge-the-Barriers-v6.3.zip) to the micro:bit repository
+ * Extract the .zip file
+ * Connect your micro:bit to your computer using a USB wire
+ * Move the extracted files to the micro:bit repository
  * Have fun and Enjoy 😄
 <br/>
 <br/>
