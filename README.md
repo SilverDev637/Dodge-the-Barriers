@@ -4,7 +4,7 @@
 
 ## Play on your device !
 
-To play on your device, follow the instructions:
+> To play on your device, follow the instructions:
 
  * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/Dodge_the_Barriers.html)
  * Open the downloaded file
@@ -12,7 +12,7 @@ To play on your device, follow the instructions:
 
 ## Run this project on your micro-bit !
 
-To play on your Micro:bit, follow the instructions:
+> To play on your Micro:bit, follow the instructions:
 
  * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/microbit-Dodge-the-Barriers-v63.hex)
  * Connect your micro:bit to your computer using a USB wire.
@@ -21,15 +21,6 @@ To play on your Micro:bit, follow the instructions:
 
 ## Changelog:
 
- * Change Log:
- * v1.0: Wrong code. Programmed for 9 different levels.
- * v1.1: Fixed code. Now the move is available.
- * v1.2: Fixed Barrier.
- * v2.0: Variable speeds. With a new score, the speed increases.
- * v2.1: Now movement can teleport; Press "B" on the right wall and it will appear on the left wall.
- * v2.2: Fixed Speed: Before this, the maximum speed was 10ms/px.
- * v2.3: New ending. A pattern of lights.
- * v2.4: Removed the old code of 9 levels and 3 different lines.
  * v3.0: Two new levels in the code: Level 2 and 3, only 2 points are clean in level 2 and 1 point is clean in level 3.
  * v3.1: A new level playable now! Level 2: When you reach point 24 you go to level 2.
  * v3.2: Bug fixed: At pass level, there was no clean point barrier.
