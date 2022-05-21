@@ -3,6 +3,7 @@
 Open this page at [https://litucrack.github.io/dodge_the_barriers_v6.3/](https://litucrack.github.io/dodge_the_barriers_v6.3/)
 <br/>
 <br/>
+
 > ## Play on your device!
 
 To play on your device, follow the instructions:
@@ -28,10 +29,10 @@ To play on your Micro:bit, follow the instructions:
 
 > ## Changelog:
 
- * v3.0: Two new levels in the code: Level 2 and 3, only 2 points are clean in level 2 and 1 point is clean in level 3.
- * v3.1: A new level playable now! Level 2: When you reach point 24 you go to level 2.
+ * v3.0: Two new levels in the code: Level 2 and 3, only 2 spots are clean in level 2 and 1 spot is clean in level 3.
+ * v3.1: A new level playable now! Level 2: When you reach the score 24 you go to level 2.
  * v3.2: Bug fixed: At pass level, there was no clean point barrier.
- * v3.4: A new level playable now! Level 3: When you reach point 60 you go to level 3.
+ * v3.4: A new level playable now! Level 3: When you reach the score 60 you go to level 3.
  * v3.5: Fixed bugs in level 3. Added new barrier patterns to levels 1 and 2: now those levels have 5 and 6 different patterns.
  * v3.6: Now press "A+B" to see your real score.
  * v3.7: Press "A+B" to pause the game.
