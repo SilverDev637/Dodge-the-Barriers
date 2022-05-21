@@ -1,12 +1,12 @@
 # Dodge the Barriers 6.3
 
-> Open this page at [https://litucrack.github.io/dodge_the_barriers_v63/](https://litucrack.github.io/dodge_the_barriers_v63/)
+> Open this page at [https://litucrack.github.io/dodge_the_barriers_v6.3/](https://litucrack.github.io/dodge_the_barriers_v6.3/)
 
 ## Play on your device !
 
 > To play on your device, follow the instructions:
 
- * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/Dodge_the_Barriers.html)
+ * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers_v6.3/blob/master/Dodge_the_Barriers.html)
  * Open the downloaded file
  * Have fun and Enjoy! 😄
 
@@ -14,9 +14,9 @@
 
 > To play on your Micro:bit, follow the instructions:
 
- * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/microbit-Dodge-the-Barriers-v63.hex)
+ * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/microbit-Dodge-the-Barriers-v6.3.hex)
  * Connect your micro:bit to your computer using a USB wire.
- * Move the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/microbit-Dodge-the-Barriers-v63.hex) to the micro:bit repository
+ * Move the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v63/blob/master/microbit-Dodge-the-Barriers-v6.3.hex) to the micro:bit repository
  * Have fun and Enjoy 😄
 
 ## Changelog:
