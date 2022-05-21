@@ -443,7 +443,7 @@ basic.showNumber(0)
 basic.clearScreen()
 basic.pause(100)
 MissingLife = 0
-DeveloperVersion = 1
+DeveloperVersion = 0
 doMakeLine1()
 PLa = game.createSprite(2, 4)
 let Round = 1
