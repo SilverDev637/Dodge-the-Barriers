@@ -1,5 +1,12 @@
 // Módulo de Eliminar obstáculos
 function doDeleteLine1 () {
+    if (score <= 25) {
+        speed = randint(350, 450)
+    } else if (score > 25 && score < 60) {
+        speed = randint(250, 349)
+    } else if (score >= 60) {
+        speed = randint(150, 249)
+    }
     E01.delete()
     E02.delete()
     E03.delete()
@@ -416,7 +423,6 @@ input.onGesture(Gesture.Shake, function () {
 })
 let fs3 = 0
 let fs2 = 0
-let speed = 0
 let Hiding = 0
 let lifes = 0
 let FS = 0
@@ -424,6 +430,7 @@ let DeveloperVersion = 0
 let MissingLife = 0
 let started = 0
 let score = 0
+let speed = 0
 let E05: game.LedSprite = null
 let E04: game.LedSprite = null
 let E03: game.LedSprite = null
@@ -431,6 +438,7 @@ let E02: game.LedSprite = null
 let E01: game.LedSprite = null
 let PLa: game.LedSprite = null
 game.setScore(0)
+speed = 500
 score = 0
 started = 0
 basic.showNumber(3)
@@ -463,13 +471,6 @@ basic.forever(function () {
         game.pause()
         game.setScore(score)
         doBeatGame()
-    }
-})
-// Módulo de Dificultad
-basic.forever(function () {
-    speed = 500 - score * 3
-    if (speed <= 230) {
-        speed = 200
     }
 })
 // Módulo de cambio de Obstáculos
@@ -509,40 +510,6 @@ basic.forever(function () {
                 basic.pause(200)
             }
         }
-    }
-})
-// Módulo de Derrota
-basic.forever(function () {
-    if (PLa.isTouching(E01)) {
-        E01.delete()
-        doLoseLife()
-        MissingLife = 1
-        basic.pause(speed)
-        MissingLife = 0
-    } else if (PLa.isTouching(E02)) {
-        E02.delete()
-        doLoseLife()
-        MissingLife = 1
-        basic.pause(speed)
-        MissingLife = 0
-    } else if (PLa.isTouching(E03)) {
-        E03.delete()
-        doLoseLife()
-        MissingLife = 1
-        basic.pause(speed)
-        MissingLife = 0
-    } else if (PLa.isTouching(E04)) {
-        E04.delete()
-        doLoseLife()
-        MissingLife = 1
-        basic.pause(speed)
-        MissingLife = 0
-    } else if (PLa.isTouching(E05)) {
-        E05.delete()
-        doLoseLife()
-        MissingLife = 1
-        basic.pause(speed)
-        MissingLife = 0
     }
 })
 /**
@@ -593,7 +560,43 @@ basic.forever(function () {
  * v6.3: Upgraded the v6.2 updates.
  * 
  * v6.4: Better game quality. Don't show the "new point" effect on winning a new point.
+ * 
+ * v7.0: Random speeds according to the level.
  */
+// Módulo de Derrota
+basic.forever(function () {
+    if (PLa.isTouching(E01)) {
+        E01.delete()
+        doLoseLife()
+        MissingLife = 1
+        basic.pause(speed)
+        MissingLife = 0
+    } else if (PLa.isTouching(E02)) {
+        E02.delete()
+        doLoseLife()
+        MissingLife = 1
+        basic.pause(speed)
+        MissingLife = 0
+    } else if (PLa.isTouching(E03)) {
+        E03.delete()
+        doLoseLife()
+        MissingLife = 1
+        basic.pause(speed)
+        MissingLife = 0
+    } else if (PLa.isTouching(E04)) {
+        E04.delete()
+        doLoseLife()
+        MissingLife = 1
+        basic.pause(speed)
+        MissingLife = 0
+    } else if (PLa.isTouching(E05)) {
+        E05.delete()
+        doLoseLife()
+        MissingLife = 1
+        basic.pause(speed)
+        MissingLife = 0
+    }
+})
 basic.forever(function () {
     if (game.isGameOver()) {
         game.setScore(score)
