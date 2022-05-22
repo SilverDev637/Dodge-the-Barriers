@@ -1,6 +1,6 @@
-> # Dodge the Barriers 6.3
+> # Dodge the Barriers 7.0
 
-Open this page at [https://litucrack.github.io/dodge_the_barriers_v6.3/](https://litucrack.github.io/dodge_the_barriers_v6.3/)
+Open this page at [https://litucrack.github.io/dodge_the_barriers/](https://litucrack.github.io/dodge_the_barriers/)
 <br/>
 <br/>
 
@@ -8,7 +8,7 @@ Open this page at [https://litucrack.github.io/dodge_the_barriers_v6.3/](https:/
 
 To play on your device, follow the instructions:
 
- * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers_v6.3/raw/master/Dodge_the_Barriers.zip)
+ * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers_v6.3/raw/master/Dodge_the_Barriers_device.zip)
  * Extract the .zip file
  * Open the game
  * Have fun and Enjoy! 😄
@@ -19,7 +19,7 @@ To play on your device, follow the instructions:
 
 To play on your Micro:bit, follow the instructions:
 
- * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers_v6.3/raw/master/Dodge_the_Barriers_v6.3.zip)
+ * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers/raw/master/Dodge_the_Barriers_micro.zip)
  * Extract the .zip file
  * Connect your micro:bit to your computer using a USB wire
  * Move the extracted files to the micro:bit repository
@@ -51,3 +51,5 @@ To play on your Micro:bit, follow the instructions:
  * v6.1: Improved Speed Formula; Harder to win; Shaking then pausing was causing errors.
  * v6.2: Upon reaching level 90, the speed stops increasing and remains at 200ms.
  * v6.3: Upgraded the v6.2 updates.
+ * v6.4: Better game quality. Don't show the "new point" effect on winning a new point.
+ * v7.0: Random speeds according to the level.
