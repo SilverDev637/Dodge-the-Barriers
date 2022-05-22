@@ -1,6 +1,6 @@
 > # Dodge the Barriers 7.0
 
-Open this page at [https://litucrack.github.io/dodge_the_barriers/](https://litucrack.github.io/LituCrack/dodge_the_barriers/)
+Open this page at [https://github.com/LituCrack/dodge_the_barriers/](https://github.com/LituCrack/dodge_the_barriers/)
 <br/>
 <br/>
 
