@@ -19,7 +19,7 @@ To play on your device, follow the instructions:
 
 To play on your Micro:bit, follow the instructions:
 
- * Download the [Micro:bit file](https://github.com/LituCrack/Dodge_the_Barriers/raw/master/dodge_the_barriers_micro.zip)
+ * Download the [Micro:bit file](https://github.com/LituCrack/Dodge-the-Barriers/raw/master/dodge_the_barriers_micro.zip)
  * Extract the .zip file
  * Connect your micro:bit to your computer using a USB wire
  * Move the ".hex" file to the micro:bit repository
