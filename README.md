@@ -8,7 +8,7 @@ Open this page at [https://github.com/LituCrack/dodge-the-barriers/](https://git
 
 To play on your device, follow the instructions:
 
- * Download the [website file](https://github.com/LituCrack/Dodge_the_Barriers/raw/master/dodge_the_barriers_html.zip)
+ * Download the [website file](https://github.com/LituCrack/Dodge-the-Barriers/raw/master/dodge_the_barriers_html.zip)
  * Extract the .zip file
  * Open the ".html" file
  * Have fun and Enjoy! 😄
