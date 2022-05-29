@@ -13,6 +13,220 @@ function doDeleteLine1 () {
     E04.delete()
     E05.delete()
 }
+function doDefineFreeSlotsLvL2 () {
+    if (PLa.get(LedSpriteProperty.X) == 0) {
+        Hiding = randint(1, 6)
+        if (Hiding == 1) {
+            E04.delete()
+            E05.delete()
+        }
+        if (Hiding == 2) {
+            E03.delete()
+            E05.delete()
+        }
+        if (Hiding == 3) {
+            E03.delete()
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E02.delete()
+            E05.delete()
+        }
+        if (Hiding == 5) {
+            E02.delete()
+            E04.delete()
+        }
+        if (Hiding == 6) {
+            E02.delete()
+            E03.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 1) {
+        Hiding = randint(1, 6)
+        if (Hiding == 1) {
+            E04.delete()
+            E05.delete()
+        }
+        if (Hiding == 2) {
+            E03.delete()
+            E05.delete()
+        }
+        if (Hiding == 3) {
+            E03.delete()
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E01.delete()
+            E05.delete()
+        }
+        if (Hiding == 5) {
+            E01.delete()
+            E04.delete()
+        }
+        if (Hiding == 6) {
+            E01.delete()
+            E03.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 2) {
+        Hiding = randint(1, 6)
+        if (Hiding == 1) {
+            E04.delete()
+            E05.delete()
+        }
+        if (Hiding == 2) {
+            E01.delete()
+            E05.delete()
+        }
+        if (Hiding == 3) {
+            E01.delete()
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E02.delete()
+            E05.delete()
+        }
+        if (Hiding == 5) {
+            E01.delete()
+            E04.delete()
+        }
+        if (Hiding == 6) {
+            E01.delete()
+            E02.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 3) {
+        Hiding = randint(1, 6)
+        if (Hiding == 1) {
+            E01.delete()
+            E05.delete()
+        }
+        if (Hiding == 2) {
+            E01.delete()
+            E02.delete()
+        }
+        if (Hiding == 3) {
+            E03.delete()
+            E05.delete()
+        }
+        if (Hiding == 4) {
+            E02.delete()
+            E05.delete()
+        }
+        if (Hiding == 5) {
+            E02.delete()
+            E03.delete()
+        }
+        if (Hiding == 6) {
+            E01.delete()
+            E03.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 4) {
+        Hiding = randint(1, 6)
+        if (Hiding == 1) {
+            E03.delete()
+            E04.delete()
+        }
+        if (Hiding == 2) {
+            E02.delete()
+            E04.delete()
+        }
+        if (Hiding == 3) {
+            E02.delete()
+            E03.delete()
+        }
+        if (Hiding == 4) {
+            E01.delete()
+            E04.delete()
+        }
+        if (Hiding == 5) {
+            E01.delete()
+            E03.delete()
+        }
+        if (Hiding == 6) {
+            E01.delete()
+            E02.delete()
+        }
+    }
+}
+function doDefineFreeSlotsLvL3 () {
+    if (PLa.get(LedSpriteProperty.X) == 0) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E02.delete()
+        }
+        if (Hiding == 2) {
+            E03.delete()
+        }
+        if (Hiding == 3) {
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 1) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+        }
+        if (Hiding == 2) {
+            E03.delete()
+        }
+        if (Hiding == 3) {
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 2) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+        }
+        if (Hiding == 2) {
+            E02.delete()
+        }
+        if (Hiding == 3) {
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 3) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+        }
+        if (Hiding == 2) {
+            E02.delete()
+        }
+        if (Hiding == 3) {
+            E03.delete()
+        }
+        if (Hiding == 4) {
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 4) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+        }
+        if (Hiding == 2) {
+            E02.delete()
+        }
+        if (Hiding == 3) {
+            E03.delete()
+        }
+        if (Hiding == 4) {
+            E04.delete()
+        }
+    }
+}
 // Módulo de Inicio 2
 function doMakeLine1 () {
     E01 = game.createSprite(0, 0)
@@ -36,113 +250,144 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 // Módulo de Obstáculos
-function doDefineFreeSlots () {
-    if (FS == 3 && (Hiding != 11 && Hiding == 0)) {
-        Hiding = randint(1, 10)
+function doDefineFreeSlotsLvL1 () {
+    if (PLa.get(LedSpriteProperty.X) == 0) {
+        Hiding = randint(1, 4)
         if (Hiding == 1) {
-            E01.delete()
-            E02.delete()
-            E03.delete()
-        } else if (Hiding == 2) {
-            E01.delete()
-            E02.delete()
-            E04.delete()
-        } else if (Hiding == 3) {
-            E01.delete()
-            E02.delete()
-            E05.delete()
-        } else if (Hiding == 4) {
-            E01.delete()
-            E03.delete()
-            E04.delete()
-        } else if (Hiding == 5) {
-            E01.delete()
-            E03.delete()
-            E05.delete()
-        } else if (Hiding == 6) {
-            E01.delete()
-            E04.delete()
-            E05.delete()
-        } else if (Hiding == 7) {
-            E02.delete()
-            E03.delete()
-            E04.delete()
-        } else if (Hiding == 8) {
-            E02.delete()
-            E03.delete()
-            E05.delete()
-        } else if (Hiding == 9) {
-            E02.delete()
-            E04.delete()
-            E05.delete()
-        } else if (Hiding == 10) {
             E03.delete()
             E04.delete()
             E05.delete()
         }
-        Hiding = 11
-    } else if (FS == 2 && (Hiding != 11 && Hiding == 0)) {
-        Hiding = randint(1, 10)
-        if (Hiding == 1) {
-            E01.delete()
+        if (Hiding == 2) {
             E02.delete()
-        } else if (Hiding == 2) {
-            E01.delete()
-            E03.delete()
-        } else if (Hiding == 3) {
-            E01.delete()
-            E04.delete()
-        } else if (Hiding == 4) {
-            E01.delete()
-            E05.delete()
-        } else if (Hiding == 5) {
-            E02.delete()
-            E03.delete()
-        } else if (Hiding == 6) {
-            E02.delete()
-            E04.delete()
-        } else if (Hiding == 7) {
-            E02.delete()
-            E05.delete()
-        } else if (Hiding == 8) {
-            E03.delete()
-            E04.delete()
-        } else if (Hiding == 9) {
-            E03.delete()
-            E05.delete()
-        } else if (Hiding == 10) {
             E04.delete()
             E05.delete()
         }
-        Hiding = 11
-    } else if (FS == 1 && (Hiding != 11 && Hiding == 0)) {
-        Hiding = randint(1, 5)
-        if (Hiding == 1) {
-            E01.delete()
-        } else if (Hiding == 2) {
+        if (Hiding == 3) {
             E02.delete()
-        } else if (Hiding == 3) {
             E03.delete()
-        } else if (Hiding == 4) {
-            E04.delete()
-        } else if (Hiding == 5) {
             E05.delete()
         }
-        Hiding = 11
+        if (Hiding == 4) {
+            E02.delete()
+            E03.delete()
+            E04.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 1) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+            E03.delete()
+            E04.delete()
+        }
+        if (Hiding == 2) {
+            E01.delete()
+            E04.delete()
+            E05.delete()
+        }
+        if (Hiding == 3) {
+            E01.delete()
+            E03.delete()
+            E05.delete()
+        }
+        if (Hiding == 4) {
+            E03.delete()
+            E04.delete()
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 2) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+            E02.delete()
+            E04.delete()
+        }
+        if (Hiding == 2) {
+            E01.delete()
+            E02.delete()
+            E05.delete()
+        }
+        if (Hiding == 3) {
+            E01.delete()
+            E04.delete()
+            E05.delete()
+        }
+        if (Hiding == 4) {
+            E02.delete()
+            E04.delete()
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 3) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+            E02.delete()
+            E03.delete()
+        }
+        if (Hiding == 2) {
+            E01.delete()
+            E02.delete()
+            E05.delete()
+        }
+        if (Hiding == 3) {
+            E01.delete()
+            E03.delete()
+            E05.delete()
+        }
+        if (Hiding == 4) {
+            E02.delete()
+            E03.delete()
+            E05.delete()
+        }
+    }
+    if (PLa.get(LedSpriteProperty.X) == 4) {
+        Hiding = randint(1, 4)
+        if (Hiding == 1) {
+            E01.delete()
+            E02.delete()
+            E03.delete()
+        }
+        if (Hiding == 2) {
+            E01.delete()
+            E02.delete()
+            E04.delete()
+        }
+        if (Hiding == 3) {
+            E01.delete()
+            E03.delete()
+            E04.delete()
+        }
+        if (Hiding == 4) {
+            E02.delete()
+            E03.delete()
+            E04.delete()
+        }
     }
 }
 // Módulo de Perder Vida
 function doLoseLife () {
-    game.removeLife(1)
-    lifes += -1
-    if (game.score() == 0) {
+    score += -1
+    if (score < 0) {
         score = 0
-    } else {
-        score += -1
+    }
+    lifes += -1
+    game.removeLife(1)
+}
+function doDefineSlot () {
+    if (FS == 3) {
+        doDefineFreeSlotsLvL1()
+    } else if (FS == 2) {
+        doDefineFreeSlotsLvL2()
+    } else if (FS == 1) {
+        doDefineFreeSlotsLvL3()
     }
 }
 // Módulo de Victoria
 function doBeatGame () {
+    game.pause()
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -369,21 +614,24 @@ function doBeatGame () {
         `)
     basic.showString("You got " + score + " Points")
 }
+function doStartUp () {
+    doMakeLine1()
+    doDefineSlot()
+}
 // Módulo de Movimientos de Obstáculos
 function doMoveLine1 () {
     if (game.score() < 99) {
         if (E01.get(LedSpriteProperty.Y) >= 4 || (E02.get(LedSpriteProperty.Y) >= 4 || (E03.get(LedSpriteProperty.Y) >= 4 || (E04.get(LedSpriteProperty.Y) >= 4 || E05.get(LedSpriteProperty.Y) >= 4)))) {
             score += 1
             doDeleteLine1()
-            doMakeLine1()
             Hiding = 0
-            doDefineFreeSlots()
             basic.pause(100)
             E01.set(LedSpriteProperty.Y, 0)
             E02.set(LedSpriteProperty.Y, 0)
             E03.set(LedSpriteProperty.Y, 0)
             E04.set(LedSpriteProperty.Y, 0)
             E05.set(LedSpriteProperty.Y, 0)
+            doStartUp()
         } else {
             if (game.isRunning()) {
                 E01.change(LedSpriteProperty.Y, 1)
@@ -431,12 +679,12 @@ let MissingLife = 0
 let started = 0
 let score = 0
 let speed = 0
-let E05: game.LedSprite = null
-let E04: game.LedSprite = null
-let E03: game.LedSprite = null
-let E02: game.LedSprite = null
-let E01: game.LedSprite = null
 let PLa: game.LedSprite = null
+let E01: game.LedSprite = null
+let E02: game.LedSprite = null
+let E03: game.LedSprite = null
+let E04: game.LedSprite = null
+let E05: game.LedSprite = null
 game.setScore(0)
 speed = 500
 score = 0
@@ -452,40 +700,26 @@ basic.clearScreen()
 basic.pause(100)
 MissingLife = 0
 DeveloperVersion = 0
-doMakeLine1()
 PLa = game.createSprite(2, 4)
 let Round = 1
 FS = 3
-doDefineFreeSlots()
+doStartUp()
 game.setLife(3)
 lifes = 3
 started = 1
-// Módulo de Dificultad
-basic.forever(function () {
-    basic.pause(speed)
-    doMoveLine1()
-})
-// Modo de Victoria
-basic.forever(function () {
-    if (score >= 99) {
-        game.pause()
-        game.setScore(score)
-        doBeatGame()
-    }
-})
 // Módulo de cambio de Obstáculos
 basic.forever(function () {
     if (score == 25 && fs2 != 1) {
         game.pause()
         FS = 2
-        doDefineFreeSlots()
+        doDefineFreeSlotsLvL1()
         fs2 = 1
         game.resume()
     }
     if (score == 60 && fs3 != 1) {
         game.pause()
         FS = 1
-        doDefineFreeSlots()
+        doDefineFreeSlotsLvL1()
         fs3 = 1
         game.resume()
     }
@@ -515,22 +749,6 @@ basic.forever(function () {
 /**
  * Change Log:
  * 
- * v3.0: Two new levels in the code: Level 2 and 3, only 2 points are clean in level 2 and 1 point is clean in level 3.
- * 
- * v3.1: A new level playable now! Level 2: When you reach point 24 you go to level 2.
- * 
- * v3.2: Bug fixed: At pass level, there was no clean point barrier.
- * 
- * v3.4: A new level playable now! Level 3: When you reach point 60 you go to level 3.
- * 
- * v3.5: Fixed bugs in level 3. Added new barrier patterns to levels 1 and 2: now those levels have 5 and 6 different patterns.
- * 
- * v3.6: Now press "A+B" to see your real score.
- * 
- * v3.7: Press "A+B" to pause the game.
- * 
- * v3.8: Fixed bugs in paused level.
- * 
  * v4.0: Now Game Over is available. You only have three lives.
  * 
  * v4.1: Fixed bugs with lives.
@@ -541,7 +759,7 @@ basic.forever(function () {
  * 
  * v4.4: If you are not a developer of the game, by shaking the micro:bit, you will see your high score.
  * 
- * v5.0: Added new barrier patterns at level 2 – now that level has 10 different patterns.
+ * v5.0: Added new barrier patterns at level 2 – now that level has 8 different patterns.
  * 
  * v5.1: Added new barrier patterns at level 1 - now that level has 10 different patterns.
  * 
@@ -562,6 +780,14 @@ basic.forever(function () {
  * v6.4: Better game quality. Don't show the "new point" effect on winning a new point.
  * 
  * v7.0: Random speeds according to the level.
+ * 
+ * v7.1: Solved a big bug; on missing life, the score was reseted.
+ * 
+ * v7.2: Added a function: On beat game press "A+B" to reset.
+ * 
+ * v7.3: Fixed minnor bugs.
+ * 
+ * v8.0: Added more difficulty: The patterns change according to your position. Fixed minnor bugs.
  */
 // Módulo de Derrota
 basic.forever(function () {
@@ -600,5 +826,28 @@ basic.forever(function () {
 basic.forever(function () {
     if (game.isGameOver()) {
         game.setScore(score)
+    }
+})
+// Modo de Victoria
+basic.forever(function () {
+    if (score >= 99) {
+        if (input.buttonIsPressed(Button.AB)) {
+            score = 0
+            game.setScore(score)
+            doStartUp()
+        }
+    }
+})
+// Módulo de Dificultad
+basic.forever(function () {
+    basic.pause(speed)
+    doMoveLine1()
+})
+// Modo de Victoria
+basic.forever(function () {
+    if (score >= 99) {
+        game.pause()
+        game.setScore(score)
+        doBeatGame()
     }
 })
