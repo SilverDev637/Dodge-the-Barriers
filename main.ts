@@ -658,16 +658,14 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    if (started == 1 && game.isRunning()) {
-        game.pause()
-        if (DeveloperVersion == 1) {
-            basic.showString("v7.0")
-        } else if (DeveloperVersion == 0) {
-            basic.showIcon(IconNames.Heart)
-            basic.showString("" + (lifes))
-        }
-        game.resume()
+    game.pause()
+    if (DeveloperVersion == 1) {
+        basic.showString("v8.0")
+    } else {
+        basic.showIcon(IconNames.Heart)
+        basic.showString("" + (lifes))
     }
+    game.resume()
 })
 let fs3 = 0
 let fs2 = 0
