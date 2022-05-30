@@ -369,10 +369,6 @@ function doDefineFreeSlotsLvL1 () {
 }
 // Módulo de Perder Vida
 function doLoseLife () {
-    score += -1
-    if (score < 0) {
-        score = 0
-    }
     lifes += -1
     game.removeLife(1)
 }
@@ -658,14 +654,20 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    game.pause()
-    if (DeveloperVersion == 1) {
-        basic.showString("v8.0")
-    } else {
-        basic.showIcon(IconNames.Heart)
-        basic.showString("" + (lifes))
+    if (started == 1) {
+        if (game.isRunning()) {
+            if (!(game.isGameOver())) {
+                game.pause()
+                if (DeveloperVersion == 1) {
+                    basic.showString("v8.0")
+                } else {
+                    basic.showIcon(IconNames.Heart)
+                    basic.showString("" + (lifes))
+                }
+                game.resume()
+            }
+        }
     }
-    game.resume()
 })
 let fs3 = 0
 let fs2 = 0
@@ -731,19 +733,6 @@ E04.setBrightness(175)
 E05.setBrightness(175)
 PLa.setBrightness(215)
 })
-basic.forever(function () {
-    if (started == 1) {
-        if (!(game.isGameOver())) {
-            if (input.buttonIsPressed(Button.AB)) {
-                game.pause()
-                basic.showString("" + (score))
-                WaitUntilBlocks.waitUntilButtonPressed(Button.AB)
-                game.resume()
-                basic.pause(200)
-            }
-        }
-    }
-})
 /**
  * Change Log:
  * 
@@ -786,6 +775,10 @@ basic.forever(function () {
  * v7.3: Fixed minnor bugs.
  * 
  * v8.0: Added more difficulty: The patterns change according to your position. Fixed minnor bugs.
+ * 
+ * v8.1: Fixed shake on countdown; Fixed Pause after Shaking.
+ * 
+ * v8.2: Repaired doLooseLife function and minimum score: [var.lifes]
  */
 // Módulo de Derrota
 basic.forever(function () {
@@ -819,6 +812,21 @@ basic.forever(function () {
         MissingLife = 1
         basic.pause(speed)
         MissingLife = 0
+    }
+})
+basic.forever(function () {
+    if (started == 1) {
+        if (game.isRunning()) {
+            if (!(game.isGameOver())) {
+                if (input.buttonIsPressed(Button.AB)) {
+                    game.pause()
+                    basic.showString("" + (score))
+                    WaitUntilBlocks.waitUntilButtonPressed(Button.AB)
+                    game.resume()
+                    basic.pause(250)
+                }
+            }
+        }
     }
 })
 basic.forever(function () {
